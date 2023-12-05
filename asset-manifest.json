@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/delunado-web/static/css/main.737d6fc1.css",
+    "main.css": "/delunado-web/static/css/main.e3f51349.css",
     "main.js": "/delunado-web/static/js/main.11f47994.js",
     "static/js/787.d1d4a2c2.chunk.js": "/delunado-web/static/js/787.d1d4a2c2.chunk.js",
     "static/media/banner.jpg": "/delunado-web/static/media/banner.862d0be72e7f9907d3b8.jpg",
@@ -22,12 +22,12 @@
     "static/media/clown.png": "/delunado-web/static/media/clown.cecad5e51213a921bed1.png",
     "static/media/nino.png": "/delunado-web/static/media/nino.e4816710747a0efc50c8.png",
     "index.html": "/delunado-web/index.html",
-    "main.737d6fc1.css.map": "/delunado-web/static/css/main.737d6fc1.css.map",
+    "main.e3f51349.css.map": "/delunado-web/static/css/main.e3f51349.css.map",
     "main.11f47994.js.map": "/delunado-web/static/js/main.11f47994.js.map",
     "787.d1d4a2c2.chunk.js.map": "/delunado-web/static/js/787.d1d4a2c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.737d6fc1.css",
+    "static/css/main.e3f51349.css",
     "static/js/main.11f47994.js"
   ]
 }
