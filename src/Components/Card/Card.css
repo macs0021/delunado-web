@@ -1,0 +1,154 @@
+.post-module {
+  position: relative;
+  z-index: 1;
+  display: block;
+  background: #fff;
+  min-width: 270px;
+  width: 400px;
+  height: 430px;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.post-module:hover {
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.30);
+}
+
+.thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.thumbnail img {
+  display: block;
+  width: 100%;
+  max-height: 400px;
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  opacity: 1;
+}
+
+.post-module:hover .thumbnail img {
+  transform: scale(1.1);
+  opacity: .6;
+}
+
+.post-content {
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  transition: all 0.3s cubic-bezier(.37, .75, .61, 1.05);
+}
+
+.category {
+  position: absolute;
+  top: -34px;
+  left: 0;
+  background: #333;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  padding: 0 0 10px;
+  color: #333;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.sub_title {
+  margin: 0;
+  padding: 0 0 20px;
+  color: #333;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.description {
+  display: none;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.8em;
+}
+
+.post-meta {
+  margin: 30px 0 0;
+  color: #999;
+}
+
+.timestamp {
+  margin: 0 16px 0 0;
+}
+
+.comments a {
+  color: #999;
+  text-decoration: none;
+}
+
+.post-module:hover .description {
+  display: block;
+}
+
+@media (max-width: 420px) {
+  .post-module {
+    position: relative;
+    z-index: 1;
+    display: block;
+    background: #fff;
+    min-width: none;
+    width: 200px;
+    height: 215px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  }
+
+
+  .post-content {
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: all 0.3s cubic-bezier(.37, .75, .61, 1.05);
+  }
+
+  .title {
+    margin: 0;
+    padding: 0 0 0;
+    padding-left: 3px;
+    color: #333;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .category {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    background: #333;
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .thumbnail img {
+    display: block;
+    width: 100%;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    opacity: 1;
+    max-height: 215px;
+  }
+}

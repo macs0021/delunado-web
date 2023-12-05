@@ -1,0 +1,344 @@
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-bg: #171717;
+    --secondary-bg: #262626;
+    --accent-bg: #4f46e5;
+
+    --primary-color: #fff;
+    --secondary-color: rgba(255, 255, 255, 70%);
+    --accent-color: #818cf8;
+
+    --border-color: rgba(255, 255, 255, 30%);
+
+    --username-size: 32px;
+    --title-size: 28px;
+    --subtitle: 24px;
+}
+
+.container {
+    height: 100vh;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-bg);
+    display: grid;
+    grid-template-rows: 220px auto;
+    overflow: auto;
+}
+
+.profile-header {
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    margin: 10px;
+    position: relative;
+}
+
+.main-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    inset: calc(100% - 125px) auto auto 90px;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+    flex-direction: column;
+    height: 80%;
+    padding: 30px;
+    text-align: center;
+}
+
+.about-me-tittle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.contact-icon {
+    transition: transform 0.3s;
+}
+
+.contact-icon:hover {
+    transform: scale(1.2);
+}
+
+.about-me-tittle::after {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50;
+    width: 25%;
+    height: 2px;
+    background-color: #f3f3f3;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    background: url('../images/Delunado.jpg') center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 10px solid var(--primary-bg);
+}
+
+.profile-names {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--primary-color);
+    background-color: var(--primary-bg);
+    padding: 10px 30px;
+    border-radius: 0 50px 50px 0;
+    transform: translateX(-10px);
+    text-align: start;
+}
+
+.page-title {
+    color: var(--secondary-color);
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    gap: 3rem;
+}
+
+.colunm-left {
+    height: 100%;
+    width: 30%;
+}
+
+.colunm-right {
+    height: 100%;
+    width: 70%;
+}
+
+.tab-info {
+    padding: 15px;
+    text-align: justify;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    overflow-x: hidden;
+    max-width: 1260px;
+    width: auto;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.contact-icon {
+    color: #f3f3f3;
+    font-size: 40px;
+
+}
+
+/* CustomScrollbar.css */
+.card-container {
+    /* Personaliza el aspecto de la barra de desplazamiento */
+    scrollbar-width: thin;
+    /* "thin" muestra una barra de desplazamiento más delgada */
+}
+
+.card-container::-webkit-scrollbar {
+    width: 5px;
+    /* Ajusta el ancho de la barra de desplazamiento para navegadores basados en WebKit */
+}
+
+.card-container::-webkit-scrollbar-thumb {
+    background-color: #f3f3f3;
+    /* Cambia el color del thumb (parte móvil de la barra de desplazamiento) */
+}
+
+.card-container::-webkit-scrollbar-thumb:hover {
+    background-color: #f3f3f3;
+    /* Cambia el color del thumb al pasar el cursor por encima */
+}
+
+.tab-style {
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+}
+
+@media (max-width: 600px) {
+
+    .contact-icon {
+        color: #f3f3f3;
+        font-size: 8vw;
+
+    }
+
+}
+
+@media (max-width: 650px) {
+    .tab-style {
+        font-size: 0.9rem !important;
+        font-weight: bold !important;
+    }
+}
+
+@media (max-width: 1500px) {
+
+    .main-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        inset: calc(100% - 125px) auto auto -10px;
+    }
+
+    .profile-names {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--primary-color);
+        background-color: var(--primary-bg);
+        padding: 10px 30px;
+        border-radius: 0 50px 50px 0;
+        transform: translateX(0px);
+        text-align: center;
+    }
+
+    .about-me {
+        margin-top: 12rem;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        gap: 3rem;
+    }
+
+    .colunm-left {
+        height: auto;
+        width: 100%;
+    }
+
+    .colunm-right {
+        height: auto;
+        width: 100%;
+    }
+
+    .tab-info {
+        padding: 15px;
+        text-align: justify;
+    }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        overflow-x: hidden;
+        max-width: 1260px;
+        width: auto;
+        max-height: none;
+        overflow-y: auto;
+    }
+
+    .main-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        inset: none;
+        left: 0;
+    }
+
+    .about-me {
+        margin-top: 12rem;
+        justify-content: center;
+    }
+
+    .profile-names {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--primary-color);
+        background-color: var(--primary-bg);
+        padding: 10px 30px;
+        border-radius: 0 50px 50px 0;
+        transform: translateX(0px);
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        overflow-x: hidden;
+        max-width: 1260px;
+        width: auto;
+        max-height: none;
+        overflow-y: auto;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .main-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        inset: none;
+        left: 0;
+        top: 25px;
+    }
+
+    .profile-header {
+        background-color: #6F61C0;
+        background-size: cover;
+        margin: 10px;
+        position: relative;
+        height: 100px;
+    }
+
+    .about-me {
+        margin-top: 2rem;
+    }
+
+    .tab-style {
+        font-size: 0.7rem !important;
+    }
+}
