@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/delunado-web/static/css/main.8436a7c8.css",
-    "main.js": "/delunado-web/static/js/main.eb3bd30e.js",
+    "main.css": "/delunado-web/static/css/main.435f0185.css",
+    "main.js": "/delunado-web/static/js/main.8d2ea1a0.js",
     "static/js/787.d1d4a2c2.chunk.js": "/delunado-web/static/js/787.d1d4a2c2.chunk.js",
     "static/media/banner.jpg": "/delunado-web/static/media/banner.862d0be72e7f9907d3b8.jpg",
     "static/media/sgd.png": "/delunado-web/static/media/sgd.9d5537d98750e70cf049.png",
@@ -22,12 +22,12 @@
     "static/media/clown.png": "/delunado-web/static/media/clown.cecad5e51213a921bed1.png",
     "static/media/nino.png": "/delunado-web/static/media/nino.e4816710747a0efc50c8.png",
     "index.html": "/delunado-web/index.html",
-    "main.8436a7c8.css.map": "/delunado-web/static/css/main.8436a7c8.css.map",
-    "main.eb3bd30e.js.map": "/delunado-web/static/js/main.eb3bd30e.js.map",
+    "main.435f0185.css.map": "/delunado-web/static/css/main.435f0185.css.map",
+    "main.8d2ea1a0.js.map": "/delunado-web/static/js/main.8d2ea1a0.js.map",
     "787.d1d4a2c2.chunk.js.map": "/delunado-web/static/js/787.d1d4a2c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8436a7c8.css",
-    "static/js/main.eb3bd30e.js"
+    "static/css/main.435f0185.css",
+    "static/js/main.8d2ea1a0.js"
   ]
 }
