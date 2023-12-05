@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/delunado-web/static/css/main.90ae9b6e.css",
+    "main.js": "/delunado-web/static/js/main.11f47994.js",
+    "static/js/787.d1d4a2c2.chunk.js": "/delunado-web/static/js/787.d1d4a2c2.chunk.js",
+    "static/media/banner.jpg": "/delunado-web/static/media/banner.862d0be72e7f9907d3b8.jpg",
+    "static/media/sgd.png": "/delunado-web/static/media/sgd.9d5537d98750e70cf049.png",
+    "static/media/chess.png": "/delunado-web/static/media/chess.15ab2382ade3233488de.png",
+    "static/media/jam.png": "/delunado-web/static/media/jam.e907264313441c0b4f5e.png",
+    "static/media/randomify.png": "/delunado-web/static/media/randomify.f169c811dc3e7405fd50.png",
+    "static/media/odders.png": "/delunado-web/static/media/odders.d0cb5ce449952b4469e7.png",
+    "static/media/bodycombat.jpg": "/delunado-web/static/media/bodycombat.c7c8a55e426bfa287268.jpg",
+    "static/media/stick.png": "/delunado-web/static/media/stick.5f24d007eb1e85dda0d5.png",
+    "static/media/gyro.png": "/delunado-web/static/media/gyro.812661bbb34797236782.png",
+    "static/media/Delunado.jpg": "/delunado-web/static/media/Delunado.8c2d9e5d32f267059c77.jpg",
+    "static/media/groundbreaker.png": "/delunado-web/static/media/groundbreaker.461ccc27ef9f5178c079.png",
+    "static/media/monkeys.png": "/delunado-web/static/media/monkeys.91e0a5024dc2b64b8543.png",
+    "static/media/slump.png": "/delunado-web/static/media/slump.3c903750bad4ac094505.png",
+    "static/media/raver.png": "/delunado-web/static/media/raver.fb9dc05a5fa1bfcbdbc6.png",
+    "static/media/BTM.png": "/delunado-web/static/media/BTM.b33e986c16496451343a.png",
+    "static/media/stickJam.png": "/delunado-web/static/media/stickJam.1080b391ab232e1b2fd1.png",
+    "static/media/clown.png": "/delunado-web/static/media/clown.cecad5e51213a921bed1.png",
+    "static/media/nino.png": "/delunado-web/static/media/nino.e4816710747a0efc50c8.png",
+    "index.html": "/delunado-web/index.html",
+    "main.90ae9b6e.css.map": "/delunado-web/static/css/main.90ae9b6e.css.map",
+    "main.11f47994.js.map": "/delunado-web/static/js/main.11f47994.js.map",
+    "787.d1d4a2c2.chunk.js.map": "/delunado-web/static/js/787.d1d4a2c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90ae9b6e.css",
+    "static/js/main.11f47994.js"
+  ]
+}
