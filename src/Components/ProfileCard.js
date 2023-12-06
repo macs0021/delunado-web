@@ -155,7 +155,7 @@ const TalksAndWorkshops = [
 const ProfileCard = () => {
 
     const [actualTab, setActualTab] = useState("one");
-    const [actualData, setActualData] = useState(WorkedOnData);
+    const [actualData, setActualData] = useState(WorkedOnData.concat(GameJamData).concat(TalksAndWorkshops));
 
     const changeTab = (tab) => {
         if (tab === "one") {
@@ -230,21 +230,17 @@ const ProfileCard = () => {
                     </div>
                 </div>
                 <div className="colunm-right" style={{ display: 'flex', justifyContent: 'center' }}>
-                    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100%' }}>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100%', width: 'auto' }}>
                         <Tabs
                             value={actualTab}
                             onChange={(event, newValue) => changeTab(newValue)}
                             aria-label="secondary tabs example"
+                            className='tab-header'
                             sx={{
-                                backgroundColor: 'transparent',
                                 '& .MuiTabs-indicator': {
                                     backgroundColor: 'white',
                                 },
-                                display: 'flex',  // Asegurar que los elementos internos sean flexibles
-                                justifyContent: 'center',  // Centrar las pestañas horizontalmente
-                                width: '100%',  // Asegurar que las pestañas ocupen todo el ancho disponible
                             }}
-                            style={{ marginBottom: '3rem', width: 'auto', display: 'flex', justifySelf: 'center', marginTop: '1rem' }}
                         >
                             <Tab
                                 value="one"

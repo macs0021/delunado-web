@@ -22,13 +22,11 @@ html {
 
     --border-color: rgba(255, 255, 255, 30%);
 
-    --username-size: 32px;
-    --title-size: 28px;
-    --subtitle: 24px;
 }
 
 .container {
     height: 100vh;
+    max-height: 100vh;
     backdrop-filter: blur(20px);
     display: flex;
     justify-content: center;
@@ -47,8 +45,21 @@ html {
 .profile-header {
     background-image: url("../images/banner.jpg");
     background-size: cover;
-    margin: 10px;
+    margin: 1vh;
     position: relative;
+    height: 20vh;
+}
+
+.tab-header {
+    margin-bottom: 3rem;
+    width: auto;
+    display: flex;
+    justify-self: center;
+    margin-top: 1rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .main-profile {
@@ -62,10 +73,9 @@ html {
 
 .about-me {
     display: flex;
-    justify-content: space-between;
-    margin-top: 10rem;
+    margin-top: 15vh;
     flex-direction: column;
-    height: 80%;
+    max-height: 60%;
     padding: 30px;
     text-align: center;
 }
@@ -96,8 +106,8 @@ html {
 }
 
 .profile-image {
-    width: 250px;
-    height: 250px;
+    width: 15vw;
+    height: 15vw;
     background: url('../images/Delunado.jpg') center;
     background-size: cover;
     border-radius: 50%;
@@ -151,7 +161,6 @@ html {
     overflow-x: hidden;
     max-width: 1260px;
     width: auto;
-    max-height: 70vh;
     overflow-y: auto;
 }
 
@@ -196,6 +205,15 @@ html {
 
     }
 
+    .tab-header {
+        margin-top: 0;
+    }
+
+    .about-me {
+        margin-top: 75px;
+    }
+
+
 }
 
 @media (max-width: 650px) {
@@ -203,6 +221,21 @@ html {
         font-size: 0.9rem !important;
         font-weight: bold !important;
     }
+
+    .profile-image {
+        width: 125px;
+        height: 125px;
+    }
+
+    .about-me {
+        margin-top: 75px;
+    }
+
+    .card-container {
+        gap: 40px !important;
+    }
+
+
 }
 
 @media (max-width: 1500px) {
@@ -211,7 +244,7 @@ html {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        inset: calc(100% - 125px) auto auto -10px;
+        inset: calc(100% - 7.5vw) auto auto -10px;
     }
 
     .profile-names {
@@ -227,7 +260,7 @@ html {
     }
 
     .about-me {
-        margin-top: 12rem;
+        margin-top: 15vh;
     }
 
 }
@@ -274,13 +307,14 @@ html {
         justify-content: center;
         position: absolute;
         width: 100%;
-        inset: none;
+        inset: calc(100% - 6rem) auto auto -10px;
+        ;
         left: 0;
     }
 
     .about-me {
-        margin-top: 12rem;
         justify-content: center;
+        margin-top: 12rem;
     }
 
     .profile-names {
@@ -295,14 +329,24 @@ html {
         text-align: center;
     }
 
+    .profile-image {
+        width: 12rem;
+        height: 12rem;
+    }
+
 }
 
 @media (max-width: 420px) {
+
+    .grid {
+        gap: 0rem !important;
+    }
+
     .card-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 5px;
+        gap: 40px;
         overflow-x: hidden;
         max-width: 1260px;
         width: auto;
@@ -329,16 +373,22 @@ html {
     .profile-header {
         background-color: #6F61C0;
         background-size: cover;
-        margin: 10px;
+        margin: 0px;
         position: relative;
         height: 100px;
     }
 
     .about-me {
-        margin-top: 2rem;
+        margin-top: 75px;
     }
 
     .tab-style {
         font-size: 0.7rem !important;
+    }
+}
+
+@media (max-width: 390px) {
+    .tab-header {
+        width: 100vw;
     }
 }
