@@ -162,6 +162,7 @@ html {
     max-width: 1260px;
     width: auto;
     overflow-y: auto;
+    margin-bottom: 2rem;
 }
 
 .contact-icon {
