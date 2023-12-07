@@ -243,6 +243,10 @@ a{
         gap: 40px !important;
     }
 
+    .try-me{
+        visibility: hidden;
+    }
+
 
 }
 

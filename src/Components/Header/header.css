@@ -1,9 +1,9 @@
 /* Definiciones de puntos de interrupción */
-@media (min-width: 512px) {
+@media (max-width: 650px) {
 
     /* $mobile-large */
     .intro {
-        height: 55vh;
+        height: 100px !important;
     }
 }
 

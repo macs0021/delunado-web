@@ -1,11 +1,27 @@
 //react
-import React from "https://esm.sh/react@18.2.0";
 import './header.css'
 import { useState } from "react";
 
 const Header = ({ title, description }) => {
 
-    const [indiceActivo, setIndiceActivo] = useState(null);
+    let squaresSize = 20;
+    let maxWait = 20;
+    let maxDuration = 50;
+
+    function checkMobileSize() {
+        const anchoPantalla = window.innerWidth;
+        if (anchoPantalla <= 768) {
+            // Es un dispositivo móvil, haz algo aquí
+            squaresSize = 5;
+            maxWait = 3;
+            maxDuration=10;
+        } 
+    }
+
+    // Llama a la función para detectar y actuar según el tipo de dispositivo
+    checkMobileSize();
+
+
 
     const manejarClic = (clase) => {
         const elemento = document.getElementById("square" + clase);
@@ -25,14 +41,11 @@ const Header = ({ title, description }) => {
             // Pause the square's animation
 
         }
-        console.log(clase);
     }
-
-
 
     let squares = [];
 
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < squaresSize; i++) {
         squares.push(i);
     }
 
@@ -43,7 +56,7 @@ const Header = ({ title, description }) => {
     return (
         <div className="intro">
             <div className="quote" style={{ width: 'auto' }}>
-                <p style={{ fontSize: '0.6rem' }}>Try me!</p>
+                <p style={{ fontSize: '0.6rem' }} className='try-me'>Try me!</p>
             </div>
             <div className="squares-wrapper">
                 <ul className="squares">
@@ -62,8 +75,8 @@ const Header = ({ title, description }) => {
                                         left: `${generateRandomNum({ min: 0, max: 90 })}%`,
                                         width: randomDimensions,
                                         height: randomDimensions,
-                                        animationDelay: `${i % 2 ? generateRandomNum({ min: 0, max: 20 }) : 0}s`,
-                                        animationDuration: `${generateRandomNum({ min: 10, max: 50 })}s`,
+                                        animationDelay: `${i % 2 ? generateRandomNum({ min: 0, max: maxWait}) : 0}s`,
+                                        animationDuration: `${generateRandomNum({ min: 10, max: maxDuration })}s`,
                                     }}
                                 />
                             </>
