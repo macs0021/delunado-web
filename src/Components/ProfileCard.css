@@ -43,6 +43,7 @@ a{
     display: grid;
     grid-template-rows: 220px auto;
     overflow: auto;
+    
 }
 
 .profile-header {
@@ -51,6 +52,7 @@ a{
     margin: 1vh;
     position: relative;
     height: 20vh;
+
 }
 
 .tab-header {
@@ -72,6 +74,7 @@ a{
     position: absolute;
     width: 30%;
     inset: calc(100% - 125px) auto auto 80px;
+    z-index: 4;
 }
 
 .about-me {

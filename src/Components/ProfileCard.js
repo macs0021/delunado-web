@@ -27,6 +27,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faItchIo, faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { useState } from "react";
+import Header from "./Header/header";
 
 const WorkedOnData = [
     {
@@ -181,6 +182,7 @@ const ProfileCard = () => {
     return (
         <div className="profile-card" style={{ height: '100vh' }}>
             <div className="profile-header">
+                <Header></Header>
                 <div className="main-profile">
                     <div className="profile-image"></div>
                     <div className="profile-names">

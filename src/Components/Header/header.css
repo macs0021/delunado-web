@@ -1,0 +1,115 @@
+/* Definiciones de puntos de interrupción */
+@media (min-width: 512px) {
+
+    /* $mobile-large */
+    .intro {
+        height: 55vh;
+    }
+}
+
+.intro {
+    position: relative;
+    height: 20vh;
+    text-shadow: 1px 1px;
+    color: #fff;
+}
+
+.intro .image-overlay {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.3;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.intro .squares-wrapper {
+    background: #0a837f;
+    background: linear-gradient(to left, #426A5A, #9EC8B9);
+    width: 100%;
+    height: 100%;
+}
+
+.intro .squares {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.intro .squares li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    z-index: 2;
+    transform-origin: center !important;
+    transition: transform 1s ease !important;
+}
+
+.quote {
+    position: absolute;
+    bottom: -0.5rem;
+    right: -1rem;
+    transform: translate(-50%, -50%);
+    font-size: 10%;
+    overflow: hidden;
+    width: 100vw;
+    text-shadow: 0 1px 4px rgba(51, 51, 51, 0.6);
+    z-index: 1;
+    padding: 5px;
+    border-radius: 10%;
+    color: #f3f3f3;
+}
+
+.quote h1 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+
+    /* $tablet */
+    .quote h1 {
+        font-size: 3rem;
+    }
+}
+
+@keyframes reduce {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+.reducido {
+    transform: scale(0) !important;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-500px) rotate(720deg) skew(10deg);
+        opacity: 0;
+        border-radius: 100%;
+
+    }
+}
