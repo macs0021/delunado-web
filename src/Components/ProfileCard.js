@@ -21,6 +21,7 @@ import Odders from '../images/odders.png'
 import Jam from '../images/jam.png'
 import SGD from '../images/sgd.png'
 
+import CV from '../files/Javier-Camacho-CV.pdf'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faItchIo, faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -196,7 +197,7 @@ const ProfileCard = () => {
                             <h2 className="about-me-tittle">
                                 About me
                             </h2>
-                            <div style={{ display: 'flex', gap: '1rem', flexDirection: 'column', marginTop: '15px'}}>
+                            <div style={{ display: 'flex', gap: '1rem', flexDirection: 'column', marginTop: '15px' }}>
                                 <p>
                                     Doing cool indie things at <a href="https://deadpixeltales.itch.io/" target="_blank">Dead Pixel Tales</a>
                                 </p>
@@ -204,7 +205,7 @@ const ProfileCard = () => {
                                     Founder & Director of <a href='https://twitter.com/spaingamedevs' target="_blank">Spain Game Devs</a>
                                 </p>
                                 <p>
-                                    Take a look to my <b>CV</b> <a href='' target="_blank">here!</a>
+                                    Take a look to my <b>CV</b> <a href={CV} target="_blank">here! </a>
                                 </p>
                             </div>
                         </div>
