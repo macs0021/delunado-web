@@ -183,8 +183,9 @@ const ProfileCard = () => {
                 <div className="main-profile">
                     <div className="profile-image"></div>
                     <div className="profile-names">
-                        <h1 className="username">Delunado</h1>
-                        <small className="page-title">Human game dev</small>
+                        <h1 className="username"> Javier</h1>
+                        <h3>'Delunado'</h3>
+                        <small className="page-title" style={{ marginTop: '6px' }}> Human Game Dev</small>
                     </div>
                 </div>
             </div>
@@ -195,12 +196,15 @@ const ProfileCard = () => {
                             <h2 className="about-me-tittle">
                                 About me
                             </h2>
-                            <div style={{ display: 'flex', gap: '1rem', flexDirection: 'column' }}>
+                            <div style={{ display: 'flex', gap: '1rem', flexDirection: 'column', marginTop: '15px'}}>
                                 <p>
-                                    Doing cool indie things at Dead Pixel Tales
+                                    Doing cool indie things at <a href="https://deadpixeltales.itch.io/" target="_blank">Dead Pixel Tales</a>
                                 </p>
                                 <p>
-                                    Creator & Director of Spain Game Devs
+                                    Creator & Director of <a href='https://twitter.com/spaingamedevs' target="_blank">Spain Game Devs</a>
+                                </p>
+                                <p>
+                                    Take a look to my <b>CV</b> <a href='' target="_blank">here!</a>
                                 </p>
                             </div>
                         </div>

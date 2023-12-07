@@ -10,6 +10,9 @@ html {
     margin: 0;
     padding: 0;
 }
+a{
+    color: #9EC8B9 !important;
+}
 
 :root {
     --primary-bg: #171717;
@@ -43,7 +46,7 @@ html {
 }
 
 .profile-header {
-    background-image: url("../images/banner.jpg");
+    background-color: #9EC8B9;
     background-size: cover;
     margin: 1vh;
     position: relative;
@@ -68,7 +71,7 @@ html {
     justify-content: center;
     position: absolute;
     width: 30%;
-    inset: calc(100% - 125px) auto auto 90px;
+    inset: calc(100% - 125px) auto auto 80px;
 }
 
 .about-me {
@@ -128,6 +131,7 @@ html {
 
 .page-title {
     color: var(--secondary-color);
+    font-style: italic;
 }
 
 .grid {
