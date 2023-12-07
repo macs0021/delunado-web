@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/delunado-web/static/css/main.2824e787.css",
-    "main.js": "/delunado-web/static/js/main.3705a45f.js",
+    "main.js": "/delunado-web/static/js/main.2217f2e3.js",
     "static/js/787.d1d4a2c2.chunk.js": "/delunado-web/static/js/787.d1d4a2c2.chunk.js",
     "static/media/sgd.png": "/delunado-web/static/media/sgd.9d5537d98750e70cf049.png",
     "static/media/chess.png": "/delunado-web/static/media/chess.15ab2382ade3233488de.png",
@@ -22,11 +22,11 @@
     "static/media/nino.png": "/delunado-web/static/media/nino.e4816710747a0efc50c8.png",
     "index.html": "/delunado-web/index.html",
     "main.2824e787.css.map": "/delunado-web/static/css/main.2824e787.css.map",
-    "main.3705a45f.js.map": "/delunado-web/static/js/main.3705a45f.js.map",
+    "main.2217f2e3.js.map": "/delunado-web/static/js/main.2217f2e3.js.map",
     "787.d1d4a2c2.chunk.js.map": "/delunado-web/static/js/787.d1d4a2c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2824e787.css",
-    "static/js/main.3705a45f.js"
+    "static/js/main.2217f2e3.js"
   ]
 }
