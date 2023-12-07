@@ -201,7 +201,7 @@ const ProfileCard = () => {
                                     Doing cool indie things at <a href="https://deadpixeltales.itch.io/" target="_blank">Dead Pixel Tales</a>
                                 </p>
                                 <p>
-                                    Creator & Director of <a href='https://twitter.com/spaingamedevs' target="_blank">Spain Game Devs</a>
+                                    Founder & Director of <a href='https://twitter.com/spaingamedevs' target="_blank">Spain Game Devs</a>
                                 </p>
                                 <p>
                                     Take a look to my <b>CV</b> <a href='' target="_blank">here!</a>
