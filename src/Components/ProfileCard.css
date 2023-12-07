@@ -265,7 +265,7 @@ a{
     }
 
     .about-me {
-        margin-top: 15vh;
+        margin-top: 20vh;
     }
 
 }
@@ -313,7 +313,6 @@ a{
         position: absolute;
         width: 100%;
         inset: calc(100% - 6rem) auto auto -10px;
-        ;
         left: 0;
     }
 
@@ -384,7 +383,7 @@ a{
     }
 
     .about-me {
-        margin-top: 75px;
+        margin-top: 90px;
     }
 
     .tab-style {
